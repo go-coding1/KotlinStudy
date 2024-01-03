@@ -2,7 +2,8 @@
 class HelloWorld
 
 fun main(args: Array<String>) {
-    println("Hello, world!")
+    val name = if (args.size > 0) args[0] else "Kotlin"
+    println("Hello $name!")
     println(max(1,2))
 }
 
@@ -15,3 +16,5 @@ fun main(args: Array<String>) {
 fun max(a: Int,b: Int) : Int
     = if (a > b) a else b
 
+//val 은 immutable
+//var 은 mutable
