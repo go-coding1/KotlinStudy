@@ -5,6 +5,8 @@ fun main(args: Array<String>) {
     val name = if (args.size > 0) args[0] else "Kotlin"
     println("Hello $name!")
     println(max(1,2))
+
+    println("hello ${if (args.size>0) args[0] else "Kotlin"}")
 }
 
 //fun max(a: Int,b: Int) : Int {
