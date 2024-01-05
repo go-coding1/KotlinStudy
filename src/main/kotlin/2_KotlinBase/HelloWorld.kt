@@ -1,3 +1,5 @@
+import geometry.shapes.createRandomRectangle
+
 //이걸 선언해야 밑에 main 함수를 실행 가능
 class HelloWorld
 
@@ -7,6 +9,8 @@ fun main(args: Array<String>) {
     println(max(1,2))
 
     println("hello ${if (args.size>0) args[0] else "Kotlin"}")
+
+    println(createRandomRectangle().isSquare)
 }
 
 //fun max(a: Int,b: Int) : Int {
