@@ -14,6 +14,8 @@ fun main(){
     println(list.max())
 
     println(joinToString(list, "; ","(",")"))
+
+    println(joinToString(list, separator = " ", prefix = " ", postfix = " "))
 }
 
 fun <T> joinToString(
